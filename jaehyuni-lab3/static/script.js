@@ -71,4 +71,4 @@ function greetingFunc(){
 window.onload = greetingFunc;
 if (window.location.href.includes("index.html") || window.location.pathname === "/") {
     greetingFunc();
-} //from chatgpt 
+} //from chatgpt generated lines 71-74 for step 11.
