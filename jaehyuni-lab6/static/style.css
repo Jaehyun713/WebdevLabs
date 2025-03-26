@@ -1,0 +1,73 @@
+*{  
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+
+    padding: 5px;
+    margin: 5px;
+}
+header {
+    color: yellow;
+}
+#webname {
+    background-color: #92ad70;
+}
+nav a {
+    text-decoration: None;
+    color: blue;
+    margin-right: 15px;
+}
+th{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: lightblue;
+    color: black;
+    width: fit-content;
+}
+tr:nth-child(even){
+    background-color:#f2f2f2;
+}
+
+form * { 
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+#button{
+    background-color: green;
+    color: white;
+    border: None;
+    border-radius: 10px;
+}
+
+#FavList{
+    display: None;
+}
+
+#readLess, #longIntro{
+    display: None;
+}
+#readLess, #readMore{
+    background-color: gray;
+    border-radius: 10px;
+}
+
+#validationMessage{
+    width: max-content;
+    margin: auto;
+}
+
+nav a:active {
+    font-weight: bold;
+    color: orange;
+    /* border-bottom: 2px solid blue; */
+}
+
+nav a:hover {
+    color: orange;
+    transition: color 0.3s ease-in-out;
+}
+

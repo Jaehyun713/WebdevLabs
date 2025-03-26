@@ -1,0 +1,125 @@
+.item1 { grid-area: header; }
+.item2 { grid-area: nav; }
+.item3 { grid-area: mainImg; }
+.item4 { grid-area: mainContent; }
+.item5 { grid-area: bottomCont}
+.item6 { grid-area: footer; }
+
+.header{
+    background-color: lightblue;
+    margin: auto;
+    padding:30px
+}
+
+.nav{
+    background-color: black;
+    padding: 10px;
+}
+
+.mainWrapper {
+    display: flex;
+    align-items: center; /*adding this should center them in  the same horiz. line but let me know if it doesnt work */
+    gap: 20px; 
+    padding: 20px;
+}
+
+.mainImg {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.mainContent{
+    background-color: purple;
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    padding: 75px;
+    height: auto;
+}
+
+.bottomCont{
+    background-color: navy;
+    color: white;
+    padding: 20px;
+}
+.footer{
+    background-color: yellow;
+}
+
+#readLess, #longIntro{
+    display: None;
+}
+#readLess, #readMore{
+    background-color: gray;
+    border-radius: 10px;
+}
+
+#hamburgerMenu {
+    display: none; 
+    font-size: 24px;
+    cursor: pointer;
+    user-select: none;
+    color: white;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+      grid-template-areas:
+        "header"
+        "nav"
+        "mainImg"
+        "mainContent"
+        "bottomCont"
+        "footer";
+      grid-template-columns: 1fr; /* One column for mobile */
+    }
+    .nav{
+        display: none;
+        flex-direction: column;
+    }
+    nav ul {
+        display: none; 
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        padding: 10px;
+    }
+    #hamburgerMenu{
+        display: block;
+    }
+}
+@keyframes animation {
+    from {color: yellow;}
+    to {color: red;}
+}
+#webname{
+    animation: animation 2s infinite alternate;
+}
+nav a:active {
+    font-weight: bold;
+    color: blue;
+    border-bottom: 2px solid blue;
+}
+
+nav a:hover {
+    color: orange;
+    transition: color 0.3s ease-in-out;
+}
