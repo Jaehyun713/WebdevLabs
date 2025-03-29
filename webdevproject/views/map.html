@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <script defer src="../static/script.js"></script>
+
+    <script
+    src="https://code.jquery.com/jquery-3.7.1.js"
+    integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="static/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<p id = "phoneAndMailing">Phone: 412-381-1665 | Mailing Address: 1220 Grandview Ave. Pittsburgh, PA 15211 | Fax Number: 412.381.1943</p>
+<body>
+    <header>
+        <div id = "logoTop">
+            <img id = "logo" src = "../static/DuqInclineLogo.png" width = "200" height = "300">
+            <h1 id = "webname">
+                Map 
+            </h1>
+        </div>
+        <nav id = "nav">
+            <a href = "../index.html">Home</a>
+            <a href = "map.html">Map</a>
+            <a href = "giftShop.html">Gift Shop</a>
+            <a href = "mailingList.html">Mailing List</a>
+            <a href = "buyTickets.html">Buy Tickets</a>
+            <a href = "moreActivities.html">More Activities</a>
+        </nav>
+    </header>
+    <div class = "main">
+        <img src = "placePhoto" width = "500" height = "300">
+        <p>
+            Parking:
+            1197 West Carson St.
+            Pittsburgh, PA. 15219
+        </p>
+        <div id = "map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.600802252704!2d-80.02012818855098!3d40.4398375713167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f6af24753323%3A0x391d7b79fc54985b!2sDuquesne%20Incline!5e0!3m2!1sen!2sus!4v1743039251851!5m2!1sen!2sus" 
+            width="600" height="450" style="border:0;"
+             allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <form action = "">
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required>
+
+            <input type = "submit" value = "Send" onclick="validate()" id = "button">
+        </form>
+    </div>
+    <footer>
+        &copy; 2025. All rights reserved
+    </footer>
+</body>
+</html>

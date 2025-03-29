@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <script defer src="../static/script.js"></script>
+
+    <script
+    src="https://code.jquery.com/jquery-3.7.1.js"
+    integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="static/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<p id = "phoneAndMailing">Phone: 412-381-1665 | Mailing Address: 1220 Grandview Ave. Pittsburgh, PA 15211 | Fax Number: 412.381.1943</p>
+<body id = "background">
+    <header>
+        <div id = "mainHeader">
+            <div id = "logoTop">
+                <img id = "logo" src = "./static/DuqInclineLogo.png" width = "200" height = "300">
+                <h1 id = "webname">
+                    Duquesne Incline 
+                </h1>
+            </div>
+            <nav id = "nav">
+                <a href = "../index.html">Home</a>
+                <a href = "./views/map.html">Map</a>
+                <a href = "./views/giftShop.html">Gift Shop</a>
+                <a href = "./views/mailingList.html">Mailing List</a>
+                <a href = "./views/buyTickets.html">Buy Tickets</a>
+                <a href = "./views/moreActivities.html">More Activities</a>
+            </nav>
+        </div>
+        
+    </header>
+    <div class = "main">
+        <!-- <a href="./static/DuqPhoto.jpeg" class="lightbox-link">
+            <img src="./static/DuqPhoto.jpeg" alt="Image" class="thumbnail">
+        </a> -->
+    
+        <div class="lightbox-container">
+            <img src="full_size_image.jpg" alt="Full Image" class="lightbox-image">
+            <button class="lightbox-close">Close</button>
+        </div>
+        <div class="row">
+            <div class="column">
+              <img src = "./static/DuqPhoto.jpeg" id = "photo1" onclick="openModal();currentSlide(1)" class="hover-shadow">
+              <p>Photo Courtesy of [name]</p>
+            </div>
+            <!-- <div class="column">
+                <img src = "./static/DuqPhoto.jpeg" id = "photo2" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                <p>Photo Courtesy of [name]</p>
+            </div>
+            <div class="column">
+                <img src = "./static/DuqPhoto.jpeg" id = "photo3" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                <p>Photo Courtesy of [name]</p>
+            </div>
+            <div class="column">
+                <img src = "./static/DuqPhoto.jpeg" id = "photo4" onclick="openModal();currentSlide(1)" class="hover-shadow">
+            </div> -->
+        </div>
+        <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+          
+                <div class="mySlides">
+                <div class="numbertext">1 / 4</div>
+                <img src="./static/DuqPhoto.jpeg" style="width:100%">
+                </div>
+          
+                <div class="mySlides">
+                <div class="numbertext">2 / 4</div>
+                <img src="i./static/DuqPhoto.jpeg" style="width:100%">
+                </div>
+          
+                <div class="mySlides">
+                <div class="numbertext">3 / 4</div>
+                <img src="./static/DuqPhoto.jpeg" style="width:100%">
+                </div>
+          
+                <div class="mySlides">
+                <div class="numbertext">4 / 4</div>
+                <img src="./static/DuqPhoto.jpeg" style="width:100%">
+                </div>
+                <!-- Next/previous controls -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <!-- Caption text -->
+                <div class="caption-container">
+                <p id="caption"></p>
+                </div>
+
+                <!-- Thumbnail image controls -->
+                <div class="column">
+                <img class="demo" src="img1.jpg" onclick="currentSlide(1)" alt="Nature">
+                </div>
+
+                <div class="column">
+                <img class="demo" src="img2.jpg" onclick="currentSlide(2)" alt="Snow">
+                </div>
+
+                <div class="column">
+                <img class="demo" src="img3.jpg" onclick="currentSlide(3)" alt="Mountains">
+                </div>
+
+                <div class="column">
+                <img class="demo" src="img4.jpg" onclick="currentSlide(4)" alt="Lights">
+                </div>
+            </div>
+        </div>
+        
+        <div id = "frontItems">
+            <p>The Duquesne Incline</p>
+            <h2 id = "allYear">Open 365 Days a Year!!!</h2>
+            <h3>
+                Hours
+                Mondays to Saturdays: 5:30 am to 12:45 am
+                Sundays and Midnight: 7:00 am to 12:45 am
+            </h3>
+            <h3> Parking: 1197 WEST CARSON STREET
+                PITTSBURGH, PA. 15219
+                SINCE 1877
+            </h3>
+        </div>
+        <div id = "video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/TyfUdaMItSI?si=EdeXSZoaszveOGIA" 
+            title="YouTube video player" 
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <p>
+            Take a step back in time on a century-old cable car and see the 
+            best views of downtown Pittsburgh while riding one of the few 
+            remaining inclines in the country.
+        </p>
+        <a href = "https://www.verylocal.com/duquesne-incline-museum-2/6389/">Overview</a>
+
+        <h1>Early History</h1>
+        <button id = "readMore">Read More</button>
+        <p id = "history">
+            The Duquesne Incline is one of those which follows very closely 
+            the tracks of an early coal hoist. 
+            Old newspapers indicate the existence of such a conveyance as 
+            early as 1854. Residents apparently referred to it as 
+            "Kirk Lewis' incline" and located it on the present site of 
+            The Duquesne Incline's Upper Station. 
+            Grandview Avenue was then the High Street, and the area was just 
+            beginning to be converted from farmland to homesites. 
+            This pleasantly-situated acreage was an excellent area to absorb 
+            some of the expanding population of the city, but the problem of easy access was still to be solved.
+            
+            Although plans for a freight and passenger incline are known to have existed much earlier, 
+            financial backing was exceedingly hard to find--even the modest sum of $47,000--and actual construction was delayed. Eventually, of course, difficulties were overcome and the Incline was built. 
+            It was opened to the public May 20, 1877. The Duquesne Incline was the first Pittsburgh incline designed and built by Samuel Diescher, for Kirk Bigham and Associates. Mr. Diescher, an engineer, had become the country's foremost builder of inclines. 
+            He was also to design and build most of those that followed.
+
+            At the time of its public opening, it was one of four inclined planes serving the summit of Coal Hill, 
+            which later came to be known as Mount Washington. 
+            The Duquesne Incline was operated, from 1877 until 1962 by The Duquesne Inclined Plane Company. 
+            From 1964 until the present, the Incline has been operated by the Society for the 
+            Preservation of The Duquesne Heights Incline; it has been owned by the Port Authority of Allegheny County.
+            
+            For more information: visit 
+            <a href ></a>
+        </p>
+        <button id = "readLess">Read less</button>
+    </div>
+    <footer>
+        &copy; 2025. All rights reserved
+    </footer>
+</body>
+</html>
