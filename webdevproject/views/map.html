@@ -23,35 +23,43 @@
         <div id = "logoTop">
             <img id = "logo" src = "../static/DuqInclineLogo.png" width = "200" height = "300">
             <h1 id = "webname">
-                Map 
+                <a href = "map.html">Map</a> 
             </h1>
         </div>
         <nav id = "nav">
             <a href = "../index.html">Home</a>
             <a href = "map.html">Map</a>
             <a href = "giftShop.html">Gift Shop</a>
-            <a href = "mailingList.html">Mailing List</a>
+            <a href = "mailingList.html">Contact Info</a>
             <a href = "buyTickets.html">Buy Tickets</a>
             <a href = "moreActivities.html">More Activities</a>
         </nav>
     </header>
     <div class = "main">
-        <img src = "placePhoto" width = "500" height = "300">
-        <p>
+        <h2>
             Parking:
             1197 West Carson St.
             Pittsburgh, PA. 15219
-        </p>
+        </h2>
+        <div id = "parkingMap">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.5694547493486!2d-80.01990358855097!3d40.440531571316626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f6af27d4c0fb%3A0xefe2eef32992cf5d!2sDuquesne%20Incline%20Parking%20West%20Carson%20Street%20Pittsburgh!5e0!3m2!1sen!2sus!4v1743298920657!5m2!1sen!2sus" 
+            width="600" height="450" style="border:0;" allowfullscreen="" 
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div id = "weather">
+            <h3 >Weather: </h3>
+        </div>
         <div id = "map">
+            <p>Duquesne Incline Main Building</p>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.600802252704!2d-80.02012818855098!3d40.4398375713167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f6af24753323%3A0x391d7b79fc54985b!2sDuquesne%20Incline!5e0!3m2!1sen!2sus!4v1743039251851!5m2!1sen!2sus" 
             width="600" height="450" style="border:0;"
              allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-        <form action = "">
+        <form>
             <label for="address">Address:</label>
             <input type="text" id="address" name="address" required>
 
-            <input type = "submit" value = "Send" onclick="validate()" id = "button">
+            <input type = "submit" value = "Send" onclick="validate()" id = "button" required>
         </form>
     </div>
     <footer>

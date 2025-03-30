@@ -77,3 +77,18 @@ $("#readLess").click(function(){
     $("#readLess").hide();
     $("#readMore").show();
 });
+
+function getWeather(){
+    fetch("https://openweathermap.org/api")
+    .then(response=>response.json())
+    .then(data => {
+        let weatherText = data.forecast.forecastday[0].day.condition.text; // Gets today's weather condition
+        document.getElementById("weather").innerText = `Weather: ${weatherText}`;    })
+    .catch(error => {
+    // If something goes wrong (like no internet), log the error in the console
+    console.error("Error fetching weather:", error);
+    // Display a user-friendly error message on the webpage
+    document.getElementById("weather").innerText = "Oops! Something went wrong. Try again.";
+    });
+}
+    
