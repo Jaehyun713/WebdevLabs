@@ -5,12 +5,17 @@
     font-style: normal;
   } */
 
-title{
+#webname{
     padding-top: 100px;
     padding-right: 150px;
     font-weight: bold;
     font-size: 24px;
     font-family: "Inter", sans-serif;
+}
+#title{
+    color: black;
+    text-decoration: None;
+
 }
 h1 {
     font-size: 22px;
@@ -29,6 +34,7 @@ h2 {
 h3{
     font-size: 18px;
     font-family: "Inter", sans-serif;
+    text-align: center;
 }
 p{
     font-size: 16px;
@@ -45,6 +51,18 @@ nav {
     font-family: "Inter", sans-serif;
     background-color:  #AAAE8E;
 }
+#nav a{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+nav a:hover{
+    font-weight: bold;
+    color: red;
+}
+nav a:active{
+    font-weight: bold;
+    color: blue;
+}
 #phoneAndMailing{
     color: #e0e0e0;
     text-align: center;
@@ -52,12 +70,6 @@ nav {
 #video{
     /* put the video at center */
     text-align: center;
-}
-#webname{
-    padding-top: 100px;
-    padding-right: 150px;
-    font-weight: bold;
-    font-size: 28px;
 }
 
 body {
@@ -80,6 +92,7 @@ footer{
 #allYear{
     animation: rainbow 2s infinite alternate;
 }
+
 #readLess, #history{
     display: None;
 }
@@ -88,15 +101,20 @@ footer{
     background-color: #828E82;
 }
 #IdvFares, #GroupFares{
+    display: none;
     margin-left: auto;
     margin-right: auto;
     background-color: #aaae8e
+}
+table{
+    width: 100%;
 }
 tr:nth-child(even){
     background-color:#E0E0E0;
 }
 #field{
     border: 5px solid;
+    background-color: #607B7D;
 }
 th {
     background-color: #828E82;
@@ -122,7 +140,12 @@ th {
     height: 250px;
 }
 
-/* Image Lightbox start */
+.demo{
+    height: auto;
+    width: 100%;
+
+}
+/* Image Lightbox copied from W3Schools and Chatgpt, debugged by me */
 .row > .column {
     padding: 0 8px;
 }
@@ -148,6 +171,7 @@ th {
 #photo1, #photo2, #photo3, #photo4{
     width: 100%;
     height: auto;
+    image-rendering: crisp-edges;
 }
 
 /* The Modal (background) */
@@ -172,6 +196,11 @@ th {
     padding: 0;
     width: 90%;
     max-width: 1200px;
+}
+.model-content img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
 }
 
 /* The Close Button */
@@ -200,6 +229,7 @@ th {
     cursor: pointer;
     position: absolute;
     top: 50%;
+    transform: translate(-50%);
     width: auto;
     padding: 16px;
     margin-top: -50px;
@@ -210,11 +240,15 @@ th {
     border-radius: 0 3px 3px 0;
     user-select: none;
     -webkit-user-select: none;
+    background: rgba(0, 0, 0, 0.5);  
 }
-
+.prev{
+    left:10px;
+    border-radius: 3px 0 0 3px;
+}
 /* Position the "next button" to the right */
 .next {
-    right: 0;
+    right: 10px;
     border-radius: 3px 0 0 3px;
 }
 
@@ -284,6 +318,20 @@ img.hover-shadow {
         padding-bottom: 30px;
     }
 }
+#molly{
+    display: grid;
+    flex-wrap: wrap;
+    border-radius: 100%;
+    align-items: stretch;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+#moreActivity{
+    border: 5px solid black;
+    background-color: #607B7D;
+    display: grid;
+    flex-wrap: nowrap;
+}
 
 form * { 
     display: block;
@@ -298,7 +346,23 @@ label{
     padding-top: 10px;
     padding-bottom: 5px;
 }
+button{
+    border-radius: 5px;
+    background-color: #607b7d;
+    font-family: "Inter";
+    border: 3px solid black; 
+    margin-bottom: 10px;
+}
+#validationMessage1,#validationMessage2,#validationMessage3,#validationMessage4{
+    font-size: 8px;
+    color: red;
+}
 #check{
     display: flex;
     align-items: center;
+    border-radius: 0 3px 3px 0;
+}
+.frontCont{
+    background-color: #607b7d;
+    border: 5px solid black;
 }

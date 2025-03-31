@@ -5,14 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../static/style.css">
-    <script defer src="../static/script.js"></script>
 
     <script
     src="https://code.jquery.com/jquery-3.7.1.js"
     integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
     crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="static/style.css">
 
+    <script defer src="../static/script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -21,7 +20,9 @@
 <body id = "background">
     <header>
         <div id = "logoTop">
-            <img id = "logo" src = "../static/DuqInclineLogo.png" width = "200" height = "300">
+            <a href = "../index.html">
+                <img id = "logo" src = "../static/DuqInclineLogo.png" width = "200" height = "300">
+            </a>            
             <h1 id = "webname">
                 <a href = "buyTickets.html">Buy Tickets</a>
             </h1>
@@ -31,14 +32,14 @@
             <a href = "map.html">Map</a>
             <a href = "giftShop.html">Gift Shop</a>
             <a href = "mailingList.html">Contact Info</a>
-            <a href = "buyTickets.html">Buy Tickets</a>
-            <a href = "moreActivities.html">More Activities</a>
+            <a href = "buyTickets.html">Ticket Prices</a>
+            <a href = "moreActivities.html">City Tours</a>
         </nav>
     </header>
     <div class = "main">
-        <img src = "../static/duqphoto4.jpeg" width = "200" height = "300">
+        <img src = "../static/duqphoto4.jpg" width = "200" height = "300">
         <h2>Buy tickets in the main building!</h2>
-        <p id = "Idv">Fares (Individuals)</p>
+        <button id = "Idv">Fares (Individuals)</button>
         <table id = "IdvFares">
             <tr>
                 <th>Age</th>
@@ -67,7 +68,7 @@
             </tr>
         </table>
 
-        <p id = "group">Group rates (Ten or more people)</p>
+        <button id = "group">Group rates (Ten or more people)</button>
         <table id = "GroupFares">
             <tr>
                 <th>Age</th>
@@ -86,20 +87,20 @@
             </tr>
         </table>
         <p>
-        <table>
+        <!-- <table>
             <tr>
                 <th>Bus companies</th>
                 <th>Schools</th>
                 <th>Patch program</th>
             </tr>
-        </table>
+        </table> -->
         </p>
-    <p> **University of Pittsburgh Students Free, with proper I.D.
-          Carnegie Mellon Students Free, with proper I.D.
-          Chatham University Students Free, with proper I.D</p>
+    <p> **University of Pittsburgh Students Free, with proper I.D.<br>
+          Carnegie Mellon Students Free, with proper I.D.<br>
+          Chatham University Students Free, with proper I.D<br></p>
     </div>
     <div id = "field">
-        <h2>FIELD TRIP PROGRAM FOR STUDENTS and YOUTH GROUPS</h2>
+        <h2>  FIELD TRIP PROGRAM FOR STUDENTS and YOUTH GROUPS  </h2>
         <p>
         A free field trip program is available for students and youth groups of 
         ten or more daily - except Saturdays and Sundays after 12:00 noon due to
@@ -122,6 +123,7 @@
         * A brief history of the French and Indian War from which the city arose
         </p>
     </div>
+    <button onclick="goBack()">Go Back</button>
     <footer>
         &copy; 2025. All rights reserved
     </footer>

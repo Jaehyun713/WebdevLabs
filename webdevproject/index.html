@@ -22,48 +22,50 @@
     <header>
         <div>
             <div id = "logoTop">
-                <img id = "logo" src = "./static/DuqInclineLogo.png" width = "200" height = "300">
-                <h1 id = "webname">
-                    <a href = "index.html">Duquesne Incline</a>
-                </h1>
+                <a href = "../index.html">
+                    <img id = "logo" src = "./static/DuqInclineLogo.png" width = "200" height = "300">
+                </a>
+                <a href = "index.html" id = "title">
+                    <h1 id = "webname">
+                        Duquesne Incline
+                    </h1>
+                </a>
             </div>
             <nav id = "nav">
                 <a href = "../index.html">Home</a>
                 <a href = "./views/map.html">Map</a>
                 <a href = "./views/giftShop.html">Gift Shop</a>
                 <a href = "./views/mailingList.html">Contact Info</a>
-                <a href = "./views/buyTickets.html">Buy Tickets</a>
-                <a href = "./views/moreActivities.html">More Activities</a>
+                <a href = "./views/buyTickets.html">Tickets Prices</a>
+                <a href = "./views/moreActivities.html">City Tours</a>
             </nav>
         </div>
         
     </header>
-     <div class = "main"> <!--Lines 41-106 from W3schools -->
+    <div class = "main"> <!--Lines 41-106 from W3schools -->
+        <p>Check out some photos</p>
         <div class="row">
             <div class="column">
-              <img src = "./static/DuqPhoto.jpeg" id = "photo1" onclick="openModal();currentSlide(1)" class="hover-shadow">
+              <img src = "./static/DuqPhoto.avif" id = "photo1" onclick="openModal();currentSlide(1)" class="hover-shadow">
             </div>
             <div class="column">
-                <img src = "./static/duqphoto2.avif" id = "photo2" onclick="openModal();currentSlide(1)" class="hover-shadow">
-                <!-- <p>Photo Courtesy of [name]</p> -->
+                <img src = "./static/duqphoto2.avif" id = "photo2" onclick="openModal();currentSlide(2)" class="hover-shadow">
             </div>
             <div class="column">
-                <img src = "./static/duqphoto3.jpg" id = "photo3" onclick="openModal();currentSlide(1)" class="hover-shadow">
-                <!-- <p>Photo Courtesy of [name]</p> -->
+                <img src = "./static/duqphoto3.jpg" id = "photo3" onclick="openModal();currentSlide(3)" class="hover-shadow">
             </div>
             <div class="column">
-                <img src = "./static/duqphoto4.jpeg" id = "photo4" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                <img src = "./static/duqphoto4.jpg" id = "photo4" onclick="openModal();currentSlide(4)" class="hover-shadow">
             </div>
         </div>
         <div id="myModal" class="modal">
             <span class="close cursor" onclick="closeModal()">&times;</span>
             <div class="modal-content">
-          
                 <div class="mySlides">
                 <div class="numbertext">1 / 4</div>
-                <img src="./static/DuqPhoto.jpeg" style="width:100%" id>
+                <img src="./static/DuqPhoto.avif" style="width:100%" height="auto">
                 </div>
-          
+        
                 <div class="mySlides">
                 <div class="numbertext">2 / 4</div>
                 <img src="./static/duqphoto2.avif" style="width:100%">
@@ -76,15 +78,14 @@
           
                 <div class="mySlides">
                 <div class="numbertext">4 / 4</div>
-                <img src = "./static/duqphoto4.jpeg" style="width:100%">
+                <img src = "./static/duqphoto4.jpg" style="width:100%">
                 </div>
                 <!-- Next/previous controls -->
                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                 <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
                 <!-- Caption text -->
                 <div class="caption-container">
-                <p id="caption"></p>
+                    <p id="caption"></p>
                 </div>
 
                 <!-- Thumbnail image controls -->
@@ -106,32 +107,37 @@
             </div>
         </div>
         
-        <div id = "frontItems">
-            <p>The Duquesne Incline</p>
-            <h2 id = "allYear">Open 365 Days a Year!!!</h2>
+        <div class = "frontCont">
+            <div id = "frontItems">
+                <p>The Duquesne Incline</p>
+                <h2 id = "allYear">Open 365 Days a Year!!!</h2>
+                <h3>
+                    Hours<br>
+                    Mondays to Saturdays: 5:30 am to 12:45 am<br>
+                    Sundays: 7:00 am to 12:45 am
+                </h3>
+                <h3> Parking: 1197 WEST CARSON STREET
+                    PITTSBURGH, PA. 15219
+                    SINCE 1877
+                </h3>
+            </div>
+            <div id = "video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/TyfUdaMItSI?si=EdeXSZoaszveOGIA" 
+                title="YouTube video player" 
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <p>Short Video Introduction by Pops' Hiking and Travel</p>
+            </div>
+            <p>
+                Take a step back in time on a century-old cable car and see the 
+                best views of downtown Pittsburgh while riding one of the few 
+                remaining inclines in the country.
+            </p>
             <h3>
-                Hours<br>
-                Mondays to Saturdays: 5:30 am to 12:45 am
-                Sundays and Midnight: 7:00 am to 12:45 am
-            </h3>
-            <h3> Parking: 1197 WEST CARSON STREET
-                PITTSBURGH, PA. 15219
-                SINCE 1877
-            </h3>
+                <a href = "https://www.verylocal.com/duquesne-incline-museum-2/6389/">Overview</a> of the trip
+            </h3>  
         </div>
-        <div id = "video">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/TyfUdaMItSI?si=EdeXSZoaszveOGIA" 
-            title="YouTube video player" 
-            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-        <p>
-            Take a step back in time on a century-old cable car and see the 
-            best views of downtown Pittsburgh while riding one of the few 
-            remaining inclines in the country.
-        </p>
-        <a href = "https://www.verylocal.com/duquesne-incline-museum-2/6389/">Overview</a>
-
+        
         <h1>Early History</h1>
         <button id = "readMore">Read More</button>
         <p id = "history">
@@ -164,6 +170,7 @@
         </p>
         <button id = "readLess">Read less</button>
     </div>
+    <button onclick="goBack()">Go Back</button>
     <footer>
         &copy; 2025. All rights reserved
     </footer>

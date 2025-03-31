@@ -20,7 +20,9 @@
 <p id = "phoneAndMailing">Phone: 412-381-1665 | Mailing Address: 1220 Grandview Ave. Pittsburgh, PA 15211 | Fax Number: 412.381.1943</p>
 <body>
     <div id = "logoTop">
-        <img id = "logo" src = "../static/DuqInclineLogo.png" width = "200" height = "300">
+        <a href = "../index.html">
+            <img id = "logo" src = "../static/DuqInclineLogo.png" width = "200" height = "300">
+        </a>      
         <h1 id = "webname">
             <a href = "mailingList.html">Contact Info</a>
         </h1>
@@ -30,8 +32,8 @@
         <a href = "map.html">Map</a>
         <a href = "giftShop.html">Gift Shop</a>
         <a href = "mailingList.html">Contact Info</a>
-        <a href = "buyTickets.html">Buy Tickets</a>
-        <a href = "moreActivities.html">More Activities</a>
+        <a href = "buyTickets.html">Ticket Prices</a>
+        <a href = "moreActivities.html">City Tours</a>
     </nav>
     <p> Contact for WheelChair Accessibility:
         1220 Grandview Ave. Pittsburgh, PA 15211
@@ -39,24 +41,29 @@
     <form id = "contact">
         <label for="fname">Name:</label>
         <input type="text" id="name" name="name" required>
+        <p id = "validationMessage1"></p>
 
         <label for="email">Email:</label>
         <input type="text" id="email" name="email" required>
+        <p id = "validationMessage2"></p>
 
-        <label for="Phone Number">Phone Number:</label>
-        <input type="text" id="Phone Number" name="comment" cols ="30" rows="10" pattern="^\d{10}$">
+        <label for="phone">Phone Number:</label>
+        <input type="text" id="phone" name="phone" cols ="30" rows="10" pattern="^\d{10}$">
+        <p id = "validationMessage3"></p>
 
-        <label for="Zip Code">Zip Code:</label>
-        <input type="text" id="Zip" name="comment" cols ="30" rows="10" pattern="^\d{5}$">
+        <label for="zip">Zip Code:</label>
+        <input type="text" id="zip" name="phone" 
+        cols ="30" rows="10" pattern="^\d{5}$" >
+        <p id = "validationMessage4"></p>
         
-        <label class="check">Check to receive messages
-        <input type="checkbox" checked="checked" id = "check" >
-        <span class="checkmark"></span></label>
-        
-        <input type = "submit" value = "Send" onclick="validate()" id = "button">
+        <label class="check">
+        <input type="checkbox" id = "check" >
+        <span class="checkmark"></span>Check to receive messages</label>
+
+        <button><input type = "submit" value = "Send" onclick="validate();"></button>
     </form>
-    <p id = "validationMessage"></p>
-
+   
+    <button onclick="goBack()">Go Back</button>
     <footer>
         &copy; 2025. All rights reserved
     </footer>

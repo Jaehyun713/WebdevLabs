@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../static/style.css">
-    <script defer src="../static/script.js"></script>
+    <link rel="stylesheet" href="../static/script.js">
+    <script defer src="../static/style.css"></script>
 
     <script
     src="https://code.jquery.com/jquery-3.7.1.js"
     integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
     crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="static/style.css">
+    <link rel="stylesheet" href="../static/style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,7 +22,9 @@
 <body>
     <header>
         <div id = "logoTop">
-            <img id = "logo" src = "../static/DuqInclineLogo.png" width = "200" height = "300">
+            <a href = "../index.html">
+                <img id = "logo" src = "../static/DuqInclineLogo.png" width = "200" height = "300">
+            </a>              
             <h1 id = "webname">
                 <a href = "map.html">Map</a> 
             </h1>
@@ -31,8 +34,8 @@
             <a href = "map.html">Map</a>
             <a href = "giftShop.html">Gift Shop</a>
             <a href = "mailingList.html">Contact Info</a>
-            <a href = "buyTickets.html">Buy Tickets</a>
-            <a href = "moreActivities.html">More Activities</a>
+            <a href = "buyTickets.html">Ticket Prices</a>
+            <a href = "moreActivities.html">City Tours</a>
         </nav>
     </header>
     <div class = "main">
@@ -62,6 +65,7 @@
             <input type = "submit" value = "Send" onclick="validate()" id = "button" required>
         </form>
     </div>
+    <button onclick="goBack()">Go Back</button>
     <footer>
         &copy; 2025. All rights reserved
     </footer>
